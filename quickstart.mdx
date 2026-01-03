@@ -1,0 +1,120 @@
+---
+title: Getting Started with Alchemetryx
+description: Quickly set up your account and explore the platform's core tools to begin leveraging business intelligence for your operations.
+---
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+<Callout kind="info">
+
+- A business email address (e.g., you@yourcompany.com)
+- Access to a modern web browser like Chrome or Firefox
+- Basic familiarity with dashboards and reporting tools
+
+</Callout>
+
+## Create and Verify Your Account
+
+Sign up in under 2 minutes.
+
+<Steps>
+  <Step title="Visit the Signup Page" icon="globe">
+    Navigate to `https://app.alchemetryx.com/signup`.
+  </Step>
+  <Step title="Enter Your Details" icon="user">
+    Provide your business name, email, and create a strong password.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from Alchemetryx and click the link.
+  </Step>
+</Steps>
+
+## Access the Main Dashboard
+
+Once verified, log in to explore your personalized dashboard.
+
+<Tabs>
+  <Tab title="Web Browser" icon="globe">
+    Go to `https://app.alchemetryx.com/login`, enter your credentials, and select **Dashboard**.
+  </Tab>
+  <Tab title="Mobile App" icon="smartphone">
+    Download the Alchemetryx app from the App Store or Google Play, then log in.
+  </Tab>
+</Tabs>
+
+## Complete Initial Onboarding
+
+Follow the guided setup to connect your first data source.
+
+<Steps>
+  <Step title="Connect Data Source" icon="database">
+    In the dashboard, click **Add Data Source** and select from options like Google Analytics, QuickBooks, or CSV upload.
+  </Step>
+  <Step title="Configure Business Profile" icon="settings">
+    Enter key details: industry, team size (`<50` employees), and growth goals.
+  </Step>
+  <Step title="Review Summary" icon="check-circle">
+    Preview your setup and click **Finish Onboarding**.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Onboarding unlocks personalized recommendations based on your business profile.
+</Callout>
+
+## Generate Your First Growth Insight Report
+
+Create actionable insights with a simple API call or dashboard button.
+
+<CodeGroup tabs="JavaScript,cURL">
+  ```javascript
+  const response = await fetch('https://api.alchemetryx.com/v1/reports/growth-insight', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer YOUR_API_KEY',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      businessId: 'your-business-id',
+      period: 'last-30-days'
+    })
+  });
+  const report = await response.json();
+  console.log(report.insights);
+  ```
+  ```bash
+  curl -X POST https://api.alchemetryx.com/v1/reports/growth-insight \
+    -H "Authorization: Bearer YOUR_API_KEY" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "businessId": "your-business-id",
+      "period": "last-30-days"
+    }'
+  ```
+</CodeGroup>
+
+From the dashboard, click **Generate Report** to view results instantly.
+
+## Next Steps
+
+Dive deeper into Alchemetryx features.
+
+<Columns cols={3}>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your API access and manage sessions.
+  </Card>
+  <Card title="Advanced Reports" icon="bar-chart-3" href="/reports">
+    Customize and automate growth insights.
+  </Card>
+  <Card title="Integrations" icon="plug" href="/integrations">
+    Connect more tools to supercharge your data.
+  </Card>
+</Columns>
+
+<Expandable title="Troubleshooting Common Issues" default-open="false">
+  - **Email not received?** Check spam folder or resend from login page.
+  - **API key issues?** Generate a new one in **Settings > API Keys**.
+  - Response times exceed `>5s`? Ensure stable internet.
+</Expandable>

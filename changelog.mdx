@@ -1,0 +1,152 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features released in Alchemetryx Consultation.
+---
+
+## Recent Updates
+
+Stay informed about the latest releases that enhance your business systems, decision intelligence, and growth analytics.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Introduced Growth Intelligence Dashboard with real-time metrics for owner-led businesses
+- Added Decision Tree Visualizer to simulate business scenarios
+
+## Improvements
+
+- Enhanced API response times by `>30%` for dashboard queries
+- Improved integration with external CRMs like Salesforce
+
+## Bug Fixes
+
+- Fixed data export errors in growth reports
+- Resolved authentication issues during peak usage
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Launched Business Systems Audit Tool for automated compliance checks
+- Integrated webhook support for custom notifications
+
+## Bug Fixes
+
+- Corrected dashboard refresh loops in multi-user sessions
+- Patched security vulnerability in report sharing (CVE-2024-5678)
+
+</Update>
+
+<Update label="2024-08-05" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Initial Release
+
+- Core decision intelligence engine with AI-powered recommendations
+- Full growth analytics suite including revenue forecasting
+- Secure API endpoints at `https://api.example.com/v1`
+
+## Breaking Changes
+
+- Updated authentication to use JWT tokens instead of API keys
+
+</Update>
+
+## Upcoming Features
+
+Preview what's coming next to supercharge your business intelligence.
+
+<Columns cols={3}>
+  <Card title="AI-Powered Forecasting" icon="trending-up" href="#">
+    Advanced predictive analytics for revenue and growth projections.
+  </Card>
+  <Card title="Multi-Company Dashboards" icon="users" href="#">
+    Manage multiple owner-led businesses from a single interface.
+  </Card>
+  <Card title="Custom Integrations Marketplace" icon="package" href="#">
+    One-click connections to `>50` business tools.
+  </Card>
+</Columns>
+
+## Updating Your Instance
+
+Follow these steps to upgrade safely and minimize downtime.
+
+<Callout kind="alert">
+  Always back up your data before updating. Review migration notes for each version.
+</Callout>
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+    Export critical reports and configurations.
+
+````bash
+curl -X POST https://api.example.com/v1/export \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{"reports": ["growth", "decisions"]}'
+````
+  </Step>
+
+  <Step title="Download Latest Release" icon="download">
+    Fetch the new version using your preferred package manager.
+  </Step>
+
+  <CodeGroup tabs="npm,Docker">
+````javascript
+// npm
+npm install alchemetryx-consultation@latest
+````
+
+````dockerfile
+# Docker
+docker pull alchemetryx/consultation:latest
+docker run -d -p 3000:3000 alchemetryx/consultation:latest
+````
+  </CodeGroup>
+
+  <Step title="Run Migrations" icon="settings">
+    Execute database migrations.
+
+````bash
+npm run migrate
+# or
+docker exec container npm run migrate
+````
+
+    Review version-specific notes in the [release assets](https://github.com/alchemetryx/consultation/releases).
+  </Step>
+
+  <Step title="Verify Deployment" icon="check-circle">
+    Test key endpoints and dashboards.
+  </Step>
+</Steps>
+
+## Migration Notes
+
+<Expandable title="v1.2.0 Migration Details" default-open="true">
+  Update your API calls to use the new `{growthMetrics}` endpoint:
+
+````javascript
+// Old
+const metrics = await fetch('https://api.example.com/v1/metrics');
+
+// New
+const metrics = await fetch('https://api.example.com/v1/growth-metrics', {
+  headers: { Authorization: `Bearer ${YOUR_TOKEN}` }
+});
+````
+</Expandable>
+
+<Expandable title="Breaking Changes in v1.0.0">
+  Migrate from API keys to JWT:
+
+  <ParamField header="Authorization" param-type="string" required="true">
+    Use `Bearer {token}` format.
+  </ParamField>
+</Expandable>
+
+<Callout kind="tip">
+  Subscribe to our RSS feed or GitHub notifications to get instant update alerts. Join the Discord for migration support.
+</Callout>
