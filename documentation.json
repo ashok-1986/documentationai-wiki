@@ -20,6 +20,11 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "Standard Operating Procedure (SOP) Framework",
+                "path": "standard-operating-procedure-sop-framework",
+                "icon": "code2"
+              },
+              {
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
