@@ -20,22 +20,14 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Proposal Structure – Alchemetryx",
-                "path": "proposal-structure-alchemetryx",
-                "icon": "projector-icon"
-              },
-              {
-                "title": "Diagnostic Framework Library",
-                "path": "diagnostic-framework-library"
-              },
-              {
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
               },
               {
                 "title": "About Alchemetryx",
-                "path": "about-alchemetryx"
+                "path": "about-alchemetryx",
+                "icon": "lucide-home"
               },
               {
                 "title": "How to Use This Documentation",
@@ -46,6 +38,16 @@
                 "title": "Standard Operating Procedure (SOP) Framework",
                 "path": "standard-operating-procedure-sop-framework",
                 "icon": "code2"
+              },
+              {
+                "title": "Diagnostic Framework Library",
+                "path": "diagnostic-framework-library",
+                "icon": "settings2"
+              },
+              {
+                "title": "Proposal Structure – Alchemetryx",
+                "path": "proposal-structure-alchemetryx",
+                "icon": "projector-icon"
               },
               {
                 "title": "Quick Start",
