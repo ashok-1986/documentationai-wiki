@@ -20,6 +20,11 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "Quick Start",
+                "path": "quickstart",
+                "icon": "zap"
+              },
+              {
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
@@ -48,11 +53,6 @@
                 "title": "Proposal Structure – Alchemetryx",
                 "path": "proposal-structure-alchemetryx",
                 "icon": "projector-icon"
-              },
-              {
-                "title": "Quick Start",
-                "path": "quickstart",
-                "icon": "zap"
               }
             ]
           },
