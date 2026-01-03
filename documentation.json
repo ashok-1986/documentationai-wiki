@@ -25,6 +25,10 @@
                 "icon": "home"
               },
               {
+                "title": "About Alchemetryx",
+                "path": "about-alchemetryx"
+              },
+              {
                 "title": "Quick Start",
                 "path": "quickstart",
                 "icon": "zap"
