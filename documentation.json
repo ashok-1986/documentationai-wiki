@@ -29,6 +29,11 @@
                 "path": "about-alchemetryx"
               },
               {
+                "title": "How to Use This Documentation",
+                "path": "how-to-use-this-documentation",
+                "icon": "alert-circle-icon"
+              },
+              {
                 "title": "Quick Start",
                 "path": "quickstart",
                 "icon": "zap"
