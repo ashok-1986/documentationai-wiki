@@ -20,6 +20,15 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "Proposal Structure – Alchemetryx",
+                "path": "proposal-structure-alchemetryx",
+                "icon": "projector-icon"
+              },
+              {
+                "title": "Diagnostic Framework Library",
+                "path": "diagnostic-framework-library"
+              },
+              {
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
